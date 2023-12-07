@@ -1,7 +1,7 @@
-const API_KEY = "0209293bf2b04c8eab4c2bae72c783ae";
-const url = "https://newsapi.org/v2/everything?q=";
+const API_KEY = "pub_34342a58598a8e0741624297023535766908c";
+const url = "https://newsdata.io/api/1/news?apikey=pub_34342a58598a8e0741624297023535766908c&q=";
 
-window.addEventListener("load",() => fetchNews("india"));
+window.addEventListener("load",() => fetchNews("pizza"));
 
 async function fetchNews(query){
     const res= await fetch(`${url}${query}&apikey=${API_KEY}`);
